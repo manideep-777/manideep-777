@@ -9,11 +9,12 @@ Greetings, traveler! I’m Kandepu Naga Venkata Manideep, a **Full Stack Develop
 ![GitHub Contribution Snake](https://raw.githubusercontent.com/manideep-777/manideep-777/output/github-snake.svg)
 
 
+
 ## 🔮 Spells in My Grimoire
 
 ### Offensive Spells (Languages & Frontend)
 - **Languages:** JavaScript, Python, C++
-- **Frontend:** HTML, CSS, React, Bootstrap
+- **Frontend:** HTML, CSS, React, Bootstrap, Tailwind
   
 ### Defensive Spells (Backend & Databases)
 - **Backend:** Node.js, Express, Flask
