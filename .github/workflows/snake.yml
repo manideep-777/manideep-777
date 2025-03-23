@@ -2,8 +2,8 @@ name: Generate Snake Game
 
 on:
   schedule:
-    - cron: "0 0 * * *"  # Runs every day at midnight UTC
-  workflow_dispatch:  # Allows manual triggering
+    - cron: "0 0 * * *"  # Runs daily at midnight UTC
+  workflow_dispatch:  # Allows manual trigger
 
 jobs:
   generate:
@@ -16,16 +16,15 @@ jobs:
         uses: Platane/snk@v3
         with:
           github_user_name: manideep-777
-          outputs: |
-            dist/github-snake.svg
-            dist/github-snake-dark.svg?palette=github-dark
+          outputs: github-snake.svg
 
       - name: 🚀 Commit & Push
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
-          git add dist || echo "No changes to commit"
-          git commit -m "Updated contribution snake" || echo "No changes to commit"
-          git push origin || echo "Push failed, maybe no changes?"
+          git checkout --orphan output  # Create new branch if not exists
+          git add github-snake.svg
+          git commit -m "Generated contribution snake"
+          git push -f origin output  # Force push to create the branch
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
