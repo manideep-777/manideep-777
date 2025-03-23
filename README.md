@@ -10,6 +10,7 @@ Greetings, traveler! I’m Kandepu Naga Venkata Manideep, a **Full Stack Develop
 
 
 
+
 ## 🔮 Spells in My Grimoire
 
 ### Offensive Spells (Languages & Frontend)
