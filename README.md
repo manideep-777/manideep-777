@@ -6,7 +6,8 @@ Greetings, traveler! I’m Kandepu Naga Venkata Manideep, a **Full Stack Develop
 
 ---
 
-![GitHub Contribution Snake](https://github.com/manideep-777/manideep-777/blob/output/github-contribution-grid-snake.svg)
+![GitHub Contribution Snake](https://raw.githubusercontent.com/manideep-777/manideep-777/output/github-snake.svg)
+
 
 ## 🔮 Spells in My Grimoire
 
